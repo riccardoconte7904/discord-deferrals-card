@@ -10,16 +10,17 @@ local function showDiscordCard(def)
 end
 
 local function checkDiscordPresence(user_id)
+    Wait(0)
+
     local p = promise.new()
 
     PerformHttpRequest(("https://discord.com/api/guilds/%s/members/%s"):format(GUILD_ID, user_id),
-        function(response_code) p.resolve(response_code) end, 'GET', '',
+        function(response_code) p:resolve(tostring(response_code) or 'false'); end, 'GET', '',
         {["Content-Type"] = "application/json", ["Authorization"] = TOKEN}
     )
 
     local resp = Citizen.Await(p)
-
-    return resp == 200
+    return resp == '200'
 end
 
 local function updateDeferrals(def, uid)
