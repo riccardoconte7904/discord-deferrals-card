@@ -1,5 +1,5 @@
 # discord-deferrals-card
-Discord presence check with AdaptiveCards in connection deferrals <br>
+FiveM Lua code snippet for Discord presence check with AdaptiveCards in connection deferrals <br>
 This is a **code snippet**, not a ready-to-run resource.
 
 ## Usage
