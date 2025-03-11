@@ -4,7 +4,7 @@ This is a **code snippet**, not a ready-to-run resource.
 
 ## Usage
 Just copy the desired code into your server side resource. **(Read the WARNING for more context).** <br>
-Make sure to edit the two constants `TOKEN` and `GUILD_ID` in the config.lua. <br>
+Make sure to edit the three constants `TOKEN`, `GUILD_ID` and `INVITE_URL` in the config.lua. <br>
 You can edit the content and style of the card to your liking, too. You also find that in the config file.
 
 If you don't have or don't want a `config.lua`, make sure you move all the variables inside the main file, all of them above the code. 
